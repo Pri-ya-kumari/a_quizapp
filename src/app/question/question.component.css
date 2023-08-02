@@ -1,0 +1,130 @@
+.container{
+    border: 1px solid black;
+    width: 890px;
+    height: 80px auto;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.image{
+    width: 60px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.head1{
+    margin-top: -75px;
+    margin-left: 550px;
+    font-family: cursive;
+}
+.head2{
+    margin-left: 550px;
+    margin-top: -17px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: cursive;
+}
+.cont{
+    width: 890px;
+    height: 40px;
+    align-items: center;
+    margin-top: -21px;
+    margin-left: -1px;
+}
+.score{
+    margin-left: 33px;
+    margin-top: -20px;
+    font-size: 19px;
+    font-family: cursive;
+    font-weight: 100px;
+}
+.question-remain{
+    margin-top: -50px;
+    margin-left: 350px;
+    font-size: 19px;
+    font-family: cursive;
+    font-weight: 100px;
+}
+.timer{
+    margin-top: -30px;
+    margin-left: 750px;
+    font-size: 19px;
+    font-family: cursive;
+    font-weight: 100px;
+}
+.card1{
+    border: 1px solid black;
+    padding-left: 30px;
+}
+.question{
+    border: 1px solid black;
+    height: 50px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 800px;
+}
+li{
+    border: 1px solid black;
+    
+}
+.card{
+    margin: -20 auto;
+    padding: 10px;
+    
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-left: -40px;
+    width: 800px;
+}
+li .card:hover{
+    border: 1px solid blue;
+}
+.btn1{
+    margin-left: 30px;
+}
+.btn2{
+    margin-left: 300px;
+}
+.btn3{
+    margin-left: 360px;
+}
+.container1{
+    border: 1px solid black;
+    width: 890px;
+    height: 430px ;
+}
+.circle{
+    border: 1px solid black;
+    width: 890px;
+    height: 220px;
+    background-color: #004792;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+.fontstyle{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 104px;
+    color: #fff;
+}
+.style1{
+    font-size: 23px;
+    margin-top: -80px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+}
+.style2{
+    font-size: 23px;
+    margin-top: -10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+}
+.ansres{
+    font-size: 19px;
+   
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}

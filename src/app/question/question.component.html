@@ -1,0 +1,65 @@
+<div class="container">
+    <img src="assets/image/quizimg.png" class="image">
+    <h2 class="head1">Angular & TypeScript Quiz</h2>
+    <h6 class="head2">Welcome User</h6>
+
+    <ng-container *ngIf="!isquizcompleted">
+        <div class="cont">
+            <div class="score">
+                <h5>{{points}} Points</h5>
+            </div>
+            <div class="question-remain">
+                <span>Question {{currentquestion+1}} of {{questionlist.length}}</span>
+            </div>
+            <div class="timer">
+                {{counter}} sec
+            </div>
+        </div>
+        <div class="card1">
+        <div class="question">
+            <div class="card">
+                <h3>{{questionlist[currentquestion]?.questionText}}</h3>
+            </div>
+        </div>
+        <div class="option">
+            <ol *ngFor="let option of questionlist[currentquestion]?.options">
+                <li (click)="answer(currentquestion+1,option)">
+                    <div appChangeBg [iscorrect]="option.correct" class="card">
+                        {{option.text}}
+                    </div>
+                </li>
+            </ol>
+    
+        </div>
+        </div>
+        <div>
+            <div class="lastrow">
+                <button mat-icon-button class="btn1" [disabled]="currentquestion===0" (click)="previousquestion()" >
+                    <mat-icon>keyboard_arrow_left</mat-icon>
+                  </button>
+                <button mat-icon-button class="btn2" (click)="resetquiz()">
+                    <mat-icon>autorenew</mat-icon>
+                  </button>
+                  <button mat-icon-button class="btn3" [disabled]="currentquestion===8" (click)="nextquestion()">
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                  </button>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="isquizcompleted">
+        <div class="container1">
+           <div class="circle">
+               <h4 class="fontstyle">Congratulation.</h4>
+            </div>
+        <h3 class="style1">You have completed the quiz</h3>
+        <h2 class="style2">Result:</h2>
+        <div class="ansres">
+        <p>Total Question Attempted : {{questionlist.length}} </p>
+        <p>Total Wrong Answer : {{incorrectanswer}} </p>
+        <p>Total Correct Answer : {{correctanswer}} </p>
+        <p>Your Score : {{points}} Points</p>
+        </div>    
+    </div>
+    </ng-container>
+</div>
